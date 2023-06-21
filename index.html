@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- connect bootstrap style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: ghostwhite;
+      }
+      /* .card-text {
+        text-overflow: ellipsis " [..]" !important;
+      } */
+    </style>
+    <!-- name of title -->
+    <title>js vol.33</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">Navbar</a>
+        <!-- search starts -->
+        <form class="d-flex" role="search">
+          <input
+            id="search"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- add form -->
+    <form
+      class="d-flex flex-column w=100 align-items-center mt=5"
+      id="add-form"
+      action=""
+    >
+      <h2>Admin panel</h2>
+      <input
+        id="title"
+        placeholder="title"
+        class="inp form-control w-50 mb-2"
+        type="text"
+      />
+      <input
+        id="price"
+        placeholder="price"
+        class="inp form-control w-50 mb-2"
+        type="text"
+      />
+      <input
+        id="description"
+        placeholder="description"
+        class="inp form-control w-50 mb-2"
+        type="text"
+      />
+      <input
+        id="image"
+        placeholder="image"
+        class="inp form-control w-50 mb-"
+        type="text"
+      />
+      <button class="btn btn-dark w-50">Add product</button>
+    </form>
+
+    <!-- add ofrm ends -->
+
+    <!-- products list start -->
+    <div
+      id="product-list"
+      class="d-flex flex-wrap justify-content-center"
+    ></div>
+    <!-- product list ends -->
+
+    <!-- script js bootstrap connect -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script js connect -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
